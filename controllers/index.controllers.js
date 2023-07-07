@@ -573,7 +573,7 @@ timezoneCron.forEach(timezone => {
 
 /* --------- Backup Birthday Cron Job (current date - 1 day) every 30 minute ---------- */
 timezoneCron.forEach(timezone => {
-    new CronJob('* */30 * * * *', async () => {
+    new CronJob('0 */30 * * * *', async () => {
         const timezoneArray = timezone.split("/");
         let detailTimezone = null;
         if(timezoneArray.length > 2){
