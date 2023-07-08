@@ -4,8 +4,9 @@
 2. import "users.sql.gz" to your database
 3. run "npm install"
 4. import "Assessment-SDT.postman_collection.json" to your postman
-5. run "node server.js"
-6. test the API
+5. reconfigure database configuration in "./config/db.config.js", especially the user & password.
+6. run "node server.js"
+7. test the API
 
 ## Important Notes
 1. Please clear all the data with name "assessment-sdt" in your database
