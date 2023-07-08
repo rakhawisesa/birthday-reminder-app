@@ -15,5 +15,5 @@
 ## Cron Job
 There are 3 cron job in this project :
 1. birthday cron job => the purpose of this cron job is to send birthday email every 9 am on users' local time, then this cron job will update the 'is_sent' field on the database to "1"
-2. backup birthday cron job => the purpose of this cron job is to send (current day - 1 day) birthday email every 30 minutes on users that has 0 in 'is_sent' status, after the birthday email is sent, then the cron job will update the 'is_sent' field to "1".
+2. backup birthday cron job => the purpose of this cron job is to send (yesterday) birthday email every 30 minutes on users that has "0" in 'is_sent' status, after the birthday email is sent, then the cron job will update the 'is_sent' field from "0" to "1".
 3. reset 'is_sent' cron job => the purpose of this cron job is to reset 'is_sent' field to 0 every 00:00:00 on 1 january
